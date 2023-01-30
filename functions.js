@@ -50,7 +50,7 @@ Output:
 */
 
 export function makeReversedArrayOfTypes(arr) {
-    return [];
+    return arr.map(pet => pet.type).reverse();
 }
 
 /*
@@ -65,7 +65,7 @@ Output:
 */
 
 export function makeSpanishLanguageArray(arr) {
-    return [];
+    return arr.map(pet => ({ nombre: pet.name, tipo: pet.type }));
 }
 
 /*
@@ -79,7 +79,7 @@ Output:
 ]*/
 
 export function makeArrayWithIsHungry(arr) {
-     return []
+    return arr.map(pet => ({ ...pet, isHungry: true }));
 }
 
 /*
@@ -93,7 +93,7 @@ Output:
 ]*/
 
 export function makeShoutingArray(arr) {
-    return [];
+    return arr.map(pet => ({ name: pet.name.toUpperCase(), type: pet.type}));
 }
 
 
@@ -104,7 +104,7 @@ Output:
 */
 
 export function makeStringArray(arr) {
-    return [];
+    return arr.map(pet => pet.name + pet.type);
 }
 
 /*
