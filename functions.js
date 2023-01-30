@@ -117,7 +117,7 @@ OUTPUT:
 */
 
 export function findByName(name, arr) {
-    return {};
+    return arr.find(pet => pet.name === name);
 }
 
 /*
