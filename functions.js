@@ -17,8 +17,8 @@ OUTPUT:
 
 ]*/
 
-export function getDogs(arr) {
-    const returnArray = arr.filter(pet => pet.type === 'dog');
+export function getDogs(boogerArray) {
+    const returnArray = boogerArray.filter(booger => booger.type === 'dog');
     return returnArray;
 }
 
@@ -29,8 +29,10 @@ Output:
 */
 
 export function makeArrayOfNames(arr) {
-    return [];
+    return arr.map(pet => pet.name);
 }
+// arr is a booger
+
 
 /*
 OUTPUT: 
@@ -38,7 +40,7 @@ OUTPUT:
 */
 
 export function getNamesOfDogs(arr) {
-    return [];
+    return arr.filter(pet => pet.type === 'dog').map(pet => pet.name);
 }
 
 /*
